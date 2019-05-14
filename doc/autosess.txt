@@ -1,0 +1,19 @@
+*autosess.txt* - An automatic vim sessions manager.
+
+==============================================================================
+INTRODUCTION                                           *autosess-introduction* 
+
+Autosess is a wrapper around vim sessions (`:h session-file`). It
+automatically saves and restores sessions by workspace.
+
+==============================================================================
+CONFIGURATION                                          *autosess-configuration* 
+                                                     *autosess-session-folder* 
+
+By default, sessions are stored in `<plugin-root>/sessions`. You can customize
+the directory:
+>
+  let g:autosess_folder = '/my/custom/folder'
+<
+==============================================================================
+vim:tw=78:ts=4:ft=help:norl:
