@@ -2,13 +2,14 @@
 An automatic vim sessions manager.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/10437171/57729653-022aa800-7697-11e9-82d6-eb4435cbb6d3.gif"></img>
+  <img src="https://user-images.githubusercontent.com/10437171/57759027-4e0e3900-76f9-11e9-8c55-8b68d72c913b.gif"></img>
 </p>
 
 ## Introduction
 
 Autosess is a wrapper around vim sessions (`:h session-file`). It automatically
-saves and restores sessions by workspace.
+saves and restores sessions by workspace. If you close vim without any remaining
+buffer, the session will be destroy.
 
 ## Installation
 

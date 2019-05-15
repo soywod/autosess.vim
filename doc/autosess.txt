@@ -4,7 +4,8 @@
 INTRODUCTION                                           *autosess-introduction* 
 
 Autosess is a wrapper around vim sessions (`:h session-file`). It
-automatically saves and restores sessions by workspace.
+automatically saves and restores sessions by workspace. If you close vim
+without any remaining buffer, the session will be destroy.
 
 ==============================================================================
 CONFIGURATION                                          *autosess-configuration* 

@@ -23,7 +23,14 @@ function! s:save()
     call mkdir(s:folder, 'p', 0700)
   endif
 
-  silent execute 'mksession! ' . v:this_session
+  let bufempty = !bufname('%')
+  let lastbuf = len(getbufinfo({'buflisted': 1})) <= 1
+
+  if bufempty && lastbuf
+    call delete(v:this_session)
+  else
+    silent execute 'mksession! ' . v:this_session
+  endif
 endfunction
 
 augroup autosess
