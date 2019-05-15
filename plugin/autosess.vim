@@ -57,7 +57,7 @@ function! s:view_load()
     let is_buffer_file = filereadable(bufname('%'))
 
     if is_buffer_file
-      loadview
+      silent! loadview
     endif
   endtry
 endfunction
@@ -68,7 +68,7 @@ function! s:view_make()
     let is_buffer_file = filereadable(bufname('%'))
 
     if is_buftype_normal && is_buffer_file
-      mkview
+      silent! mkview
     endif
   catch
     call s:echo_error('error while making view')
