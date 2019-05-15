@@ -23,7 +23,7 @@ function! s:save()
     call mkdir(s:folder, 'p', 0700)
   endif
 
-  let bufempty = !bufname('%')
+  let bufempty = bufname('%') == ''
   let lastbuf = len(getbufinfo({'buflisted': 1})) <= 1
 
   if bufempty && lastbuf
