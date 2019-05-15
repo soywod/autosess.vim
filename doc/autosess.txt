@@ -1,11 +1,11 @@
-*autosess.txt* - An automatic vim sessions manager.
+*autosess.txt* - An automatic vim sessions and views manager.
 
 ==============================================================================
 INTRODUCTION                                           *autosess-introduction* 
 
-Autosess is a wrapper around vim sessions (`:h session-file`). It
-automatically saves and restores sessions by workspace. If you close vim
-without any remaining buffer, the session will be destroy.
+Autosess is a wrapper around vim sessions (`:h mksession`) and vim views (`:h
+mkview`). It automatically saves and restores sessions by workspace, and views
+by file.
 
 ==============================================================================
 CONFIGURATION                                          *autosess-configuration* 
